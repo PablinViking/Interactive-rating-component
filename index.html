@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <section class="rating-section">
+    <div class="rating-section__icon-container">
+      <img class="rating-section__icon-container__icon" src="images/icon-star.svg" alt="icon star">
+    </div>
+    <h1 class="rating-section__h1">How did we do?</h1>
+    <p class="rating-section__p">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rating-section__score-container">
+      <button class="rating-section__score-container__number">1</button>
+      <button class="rating-section__score-container__number">2</button>
+      <button class="rating-section__score-container__number">3</button>
+      <button class="rating-section__score-container__number">4</button>
+      <button class="rating-section__score-container__number">5</button>
+    </div>
+    <button class="rating-section__submit">SUBMIT</button>
+  </section>
+  <!-- Rating state end -->
+
+
+  <!-- Thank you state start -->
+  <section class="thankyou-section">
+    <img class="thankyou-section__image" src="images/illustration-thank-you.svg" alt="ilustration">
+    <p class="thankyou-section__selected">
+      You selected <span class="thankyou-section__selected--number">4</span> out of 5
+    </p>
+    <h1 class="thankyou-section__h1">Thank you!</h1>
+    <p class="thankyou-section__thanks-mess">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </section>
+  <!-- Thank you state end -->
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="#">Pablo Boichenko</a>.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

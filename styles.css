@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Orange-500: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+
+    --Grey-800: hsl(217, 17%, 21%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+/* ------------> Body <------------ */
+body{
+    background-color: var(--Grey-950);
+    font-size: 15px;
+}
+
+/* ------------> Rating Section Start <------------ */
+.rating-section{
+    display: block;
+    background-color: var(--Grey-900);
+    height: 360px;
+    width: 327px;
+    margin: 154px auto 50px;
+    border-radius: 10px;
+    padding: 23px;
+}
+
+/* ------------> Image <------------ */
+.rating-section__icon-container{
+    height: 40px;
+    width: 40px;
+    background-color: var(--Grey-800);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+/* ------------> Info <------------ */
+.rating-section__h1{
+    font-size: 1.533em;
+    font-weight: 400;
+    color: var(--White);
+    margin-top: 20px;
+}
+
+.rating-section__p{
+    font-size: 0.92em;
+    line-height: 1.5em;
+    color: var(--Grey-500);
+    margin-top: 12px;
+}
+
+/* ------------> Buttons <------------ */
+.rating-section__score-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-section__score-container__number{
+    height: 42px;
+    width: 42px;
+    background-color: var(--Grey-800);
+    border-radius: 50%;
+    color: var(--Grey-500);
+    padding-top: 2px;
+}
+
+.rating-section__score-container__number:hover{
+    background-color: var(--Orange-500);
+    color: var(--Grey-950);
+    cursor: pointer;
+}
+
+.rating-section__score-container__number:focus{
+    background-color: var(--White);
+    color: var(--Grey-950);
+}
+
+.rating-section__submit{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: var(--Orange-500);
+    color: var(--Grey-950);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.rating-section__submit:hover{
+    background-color: var(--White);
+    cursor: pointer;
+}
+/* ------------> Rating Section End <------------ */
+
+
+/* ------------> Thank You Section Start <------------ */
+.thankyou-section{
+    display: none;
+    background-color: var(--Grey-900);
+    height: 360px;
+    width: 327px;
+    margin: 154px auto 50px;
+    border-radius: 10px;
+    padding: 23px;
+    text-align: center;
+}
+
+/* ------------> Image <------------ */
+.thankyou-section__image{
+    width: 146px;
+    margin-top: 11px;
+}
+
+/* ------------> Selected <------------ */
+.thankyou-section__selected{
+    height: 34px;
+    width: 168px;
+    background-color: var(--Grey-800);
+    margin: 18px auto 0;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 0.94em;
+    color: var(--Orange-500);
+    font-weight: 400;
+}
+
+/* ------------> Thank You Mess <------------ */
+.thankyou-section__h1{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--White);
+    margin-top: 32px;
+}
+
+.thankyou-section__thanks-mess{
+    font-size: 0.92em;
+    line-height: 1.5em;
+    color: var(--Grey-500);
+    margin-top: 12px;
+}
+/* ------------> Thank You Section End <------------ */
+
+/* ------------> Footer <------------ */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Grey-500);
+    margin-bottom: 25px;
+}
+
+.attribution a {
+    color: var(--Orange-500);
+}
+
+.attribution a:hover{
+    color: var(--White);
+}
+
+/* ------------> 450px <------------ */
+@media screen and (min-width: 500px) {
+    /* ------------> Rating Section Start <------------ */
+    .rating-section{
+        width: 412px;
+        height: 416px;
+        padding: 32px;
+        border-radius: 25px;
+    }
+
+    /* ------------> Image <------------ */
+    .rating-section__icon-container{
+        height: 48px;
+        width: 48px;
+        padding: 16px;
+    }
+
+    /* ------------> Info <------------ */
+    .rating-section__h1{
+        font-size: 1.85em;
+        margin-top: 32px;
+        font-weight: 600;
+    }
+
+    .rating-section__p{
+        font-size: 1em;
+        margin-top: 24px;
+    }
+
+    /* ------------> Buttons <------------ */
+    .rating-section__score-container{
+        margin-top: 24px;
+    }
+
+    .rating-section__score-container__number{
+        height: 53px;
+        width: 53px;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    /* ------------> Rating Section End <------------ */
+
+
+    /* ------------> Thank You Section Start <------------ */
+    .thankyou-section{
+        width: 412px;
+        height: 416px;
+        padding: 35px;
+        border-radius: 25px;
+    }
+
+    /* ------------> Image <------------ */
+    .thankyou-section__image{
+        width: 165px;
+        margin-top: 10px;
+    }
+
+    /* ------------> Selected <------------ */
+    .thankyou-section__selected{
+        height: 35px;
+        width: 194px;
+        margin: 30px auto 0;
+        padding: 10px 0;
+        font-size: 1em;
+    }
+
+    /* ------------> Thank You Mess <------------ */
+    .thankyou-section__h1{
+        font-size: 1.85em;
+        margin-top: 36px;
+    }
+
+    .thankyou-section__thanks-mess{
+        font-size: 1em;
+        line-height: 1.5em;
+        color: var(--Grey-500);
+        margin-top: 12px;
+    }
+    /* ------------> Thank You Section End <------------ */
+}
+
+/* ------------> 1440px <------------ */
+@media screen and (min-width: 1440px){
+    .rating-section{
+        margin: 195px auto 50px;
+    }
+
+    .thankyou-section{
+        margin: 195px auto 50px;
+    }
+}
